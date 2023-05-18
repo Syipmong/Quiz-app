@@ -308,7 +308,7 @@ resetQuiz() {
       advertisement.classList.add("advertisement");
       advertisement.innerHTML = `
         <h3>Join Our Discord Server!</h3>
-        <p>Get connected with other quiz enthusiasts and discuss the latest trivia.</p>
+        <p>Get connected with other programmers and networkers.</p>
         <p>Click <a href="https://discord.gg/vSrVwUMyrC">here</a> to join now!</p>
         <button id="close-advertisement">Close</button>
       `;
