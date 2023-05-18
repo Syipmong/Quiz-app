@@ -1,0 +1,218 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b8a, #ff5ed1, #c881ff);
+   animation: gradientAnimation 10s ease infinite;
+   border-radius: 8px;
+}
+
+#question {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b8a, #ff5ed1, #c881ff);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#options {
+  list-style-type: none;
+  padding: 0;
+}
+
+#options li {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+#options li:hover {
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b8a, #ff5ed1, #c881ff);
+   animation: gradientAnimation 10s ease infinite;
+}
+
+#options li.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#options li.selected::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#options li label {
+  margin-left: 10px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 10px;
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b8a, #ff5ed1, #c881ff);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   animation: gradientAnimation 10s ease infinite;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.advertisement {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.advertisement p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.advertisement a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.advertisement button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.advertisement button:hover {
+  background-color: #0056b3;
+}
+
+#options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b8a, #ff5ed1, #c881ff);
+   animation: gradientAnimation 10s ease infinite;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  background-color: #ddd;
+}
+
+.footer .social-icons a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #333;
+}
+
+.footer .social-icons a i.fa {
+  font-size: 16px;
+}
