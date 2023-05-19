@@ -307,9 +307,9 @@ resetQuiz() {
       const advertisement = document.createElement("div");
       advertisement.classList.add("advertisement");
       advertisement.innerHTML = `
-        <h3>Join Our Discord Server!</h3>
-        <p>Get connected with other programmers and networkers.</p>
-        <p>Click <a href="https://discord.gg/vSrVwUMyrC">here</a> to join now!</p>
+        <h3>Check My Site!</h3>
+        <p>Check my personal website</p>
+        <p>Click <a href="https://syipmong.github.io/yipmong/#">here</a> to View it! and you can leave a suggestion or your thoughts through any of my social profiles</p>
         <button id="close-advertisement">Close</button>
       `;
 
