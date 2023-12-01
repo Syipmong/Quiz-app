@@ -262,7 +262,7 @@ showScore() {
     const resultBox = document.getElementById("result-box");
     resultBox.style.display = "block";
 
-    this.showAdvertisement();
+    //this.showAdvertisement();
 }
 
 resetQuiz() {
@@ -297,7 +297,7 @@ resetQuiz() {
       this.questionElement.innerText = `You scored ${this.score}/${totalQuestions} (${scorePercentage}%)`;
       this.optionsElement.innerHTML = "";
 
-      this.showAdvertisement();
+      //this.showAdvertisement();
     }
 
     showAdvertisement() {
@@ -313,8 +313,8 @@ resetQuiz() {
         <button id="close-advertisement">Close</button>
       `;
 
-      overlay.appendChild(advertisement);
-      document.body.appendChild(overlay);
+      //overlay.appendChild(advertisement);
+      //document.body.appendChild(overlay);
 
       const closeButton = document.getElementById("close-advertisement");
       closeButton.addEventListener("click", () => {
